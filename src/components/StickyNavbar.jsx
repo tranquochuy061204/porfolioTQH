@@ -3,8 +3,8 @@ import Marquee from 'react-fast-marquee';
 import { navItems } from '../constants';
 import { useState, useEffect, useRef } from 'react';
 
-const StickyNavbar = () => {
-  const [ activeSection, setActiveSection] = useState('');
+const StickyNavbar = ({ className }) => {
+  const [activeSection, setActiveSection] = useState('');
   const [highlightStyle, setHighlightStyle] = useState({ left: 0, width: 0 });
 
   const itemRefs = useRef([]);
@@ -42,7 +42,7 @@ const StickyNavbar = () => {
   }, [activeSection]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+    <nav className={`sticky top-0 z-50 bg-white shadow-md ${className}`}>
       <div className="max-w-7xl mx-auto px-4 py-3 relative">
         {/* Thanh highlight di chuyển */}
         <span

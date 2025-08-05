@@ -31,6 +31,12 @@ section {
   h1 {
     @apply  text-shadow-white-100 text-shadow-lg/10 bg-[url('/images/card_bg.jpg')] bg-cover bg-center text-transparent bg-clip-text;
   }
+   h2 {
+    @apply  text-shadow-white-100 text-shadow-lg/10 bg-[url('/images/card_bg.jpg')] bg-cover bg-center text-transparent bg-clip-text;
+  }
+   h3 {
+    @apply  text-shadow-white-100 text-shadow-lg/10 bg-[url('/images/card_bg.jpg')] bg-cover bg-center text-transparent bg-clip-text;
+  }
 }
 
 #about-me {

@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <AnimatePresence>
-        <StickyNavbar />
+        <StickyNavbar className={'hidden lg:block'} />
 
         <Hero />
 
