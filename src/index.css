@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Francois+One&family=Geologica:wght,CRSV,SHRP@100..900,0.5,100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap');
+@import 'tailwindcss';
+@theme {
+  --font-display: 'Alfa Slab One', serif;
+  --font-montserrat: 'Montserrat', san-serif;
+  --color-beige: #826641;
+  --color-white-100: #d6e0ff;
+  --color-white-200: #eed1ac;
+
+  --animate-fade-in: fadeIn 0.3s ease-in-out,
+
+  @keyframe fadeIn: {
+    '0%': { opacity: 0, transform: 'translateY(-5px)' },
+    '100%': { opacity: 1, transform: 'translateY(0)' },
+  }
+}
+html,
+body {
+  @apply font-display bg-[url(/images/pattern.webp)] bg-cover;
+}
+
+section {
+  @apply py-20 px-10;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+#hero {
+  h1 {
+    @apply  text-shadow-white-100 text-shadow-lg/10 bg-[url('/images/card_bg.jpg')] bg-cover bg-center text-transparent bg-clip-text;
+  }
+}
+
+#about-me {
+  .description-text {
+    @apply font-montserrat;
+  }
+}
+
+h1 {
+  @apply font-display;
+}
